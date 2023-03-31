@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  align-items: flex-end;
+}
+
+
+@media screen and (max-width: 998px) {
+  .footer {
+    text-align: unset;
+    align-items: unset;
+  }
+}

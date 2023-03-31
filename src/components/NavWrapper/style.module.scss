@@ -1,0 +1,11 @@
+@media screen and (max-width: 998px) {
+  .wrapper{
+    text-transform: uppercase;
+    & > *:not(:first-of-type) {
+      margin-left: 8px;
+    }
+  }
+  .wrapper > *:last-of-type {
+    display: none;
+  }
+}

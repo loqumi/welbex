@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  padding: 16px;
+  background-color: rgba(217, 0, 0, 0);
+  flex-wrap: wrap;
+  transition: .6s;
+  z-index: 1;
+}
+
+@media screen and (max-width: 998px) {
+  .header {
+    background-color: rgba(0, 0, 0, 1);
+    justify-content: center;
+    font-size: 13px;
+    padding: 0;
+    align-items: center;
+  }
+  .header > *:first-child {
+    display: none;
+  }
+  .header > *:last-child {
+    display: none;
+  }
+}

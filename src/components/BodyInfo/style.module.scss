@@ -1,0 +1,14 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+}
+
+@media screen and (max-width: 998px) {
+  .body {
+    margin-top: 45px;
+    align-items: unset;
+    text-align: unset;
+  }
+}

@@ -1,0 +1,109 @@
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  z-index: 0;
+}
+
+.purple_light {
+  position: absolute;
+  width: 259px;
+  height: 259px;
+  left: 602px;
+  top: -154px;
+
+  background: #833AB4;
+  opacity: 0.5;
+  filter: blur(196px);
+}
+
+.red_light {
+  position: absolute;
+  width: 311px;
+  height: 311px;
+  left: -102px;
+  top: 251px;
+
+  background: #961A1A;
+  opacity: 0.5;
+  filter: blur(196px);
+}
+
+.purple_ball {
+  position: absolute;
+  width: 83px;
+  height: 83px;
+  left: 868px;
+  top: -2px;
+
+  filter: blur(5px);
+  backdrop-filter: blur(2px);
+}
+.red_ball {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  left: 751px;
+  top: 547px;
+
+  filter: blur(2.5px);
+  backdrop-filter: blur(2px);
+}
+.red_ball2 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 381px;
+  top: 83px;
+
+  backdrop-filter: blur(2px);
+}
+
+@media screen and (max-width: 600px) {
+  .purple_light {
+    position: absolute;
+    width: 259px;
+    height: 259px;
+    left: 258px;
+    top: 107px;
+
+    background: #833AB4;
+    opacity: 0.5;
+    filter: blur(196px);
+  }
+  .red_light {
+    position: absolute;
+    width: 211px;
+    height: 210px;
+    left: -55px;
+    top: 241px;
+
+    background: #961A1A;
+    opacity: 0.5;
+    filter: blur(196px);
+  }
+  .purple_ball {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 287px;
+    top: 312px;
+    filter: blur(5px);
+    backdrop-filter: blur(2px);
+  }
+  .red_ball2 {
+    position: absolute;
+    width: 86px;
+    height: 93px;
+    left: 19px;
+    top: 440px;
+    filter: blur(5px);
+  }
+}
