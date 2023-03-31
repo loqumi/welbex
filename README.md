@@ -1,1 +1,1 @@
-### [landing page](https://landing-page-loq.web.app/)
+### [landing page](https://welbex-by-loqumi.web.app/)
