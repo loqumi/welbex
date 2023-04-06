@@ -11,8 +11,8 @@ export const offerBlocks = [
 ];
 
 export const offerBlocksMobile = [
+  { text: intl(INTL.SECTION.MOB_TEXT_SKYPE) },
   { text: intl(INTL.SECTION.MOB_TEXT_WIDGETS) },
   { text: intl(INTL.SECTION.MOB_TEXT_DASHBOARD) },
-  { text: intl(INTL.SECTION.MOB_TEXT_SKYPE) },
   { text: intl(INTL.SECTION.MOB_TEXT_DAYS) },
 ];

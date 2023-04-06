@@ -1,0 +1,13 @@
+.wrapper {
+  margin-right: 2px;
+  > *:not(:first-of-type) {
+    margin-left: 13px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrapper {
+  > *:not(:first-of-type) {
+    margin-left: 14px;
+  }
+  }
+}

@@ -10,7 +10,7 @@
   flex-direction: column;
 
   & > *:not(:first-of-type) {
-    margin-top: 24px;
+    margin-top: 7px;
   }
 }
 
@@ -22,7 +22,7 @@
   flex-direction: row;
 
   & > *:not(:first-of-type) {
-    margin-left: 24px;
+    margin-left: 52px;
   }
 }
 
@@ -68,4 +68,17 @@
 
 .wrap {
   flex-wrap: wrap;
+}
+
+.container a:last-of-type{
+  white-space: nowrap;
+}
+@media screen and (max-width: 600px) {
+  .direction-row {
+    flex-direction: row;
+
+    & > *:not(:first-of-type) {
+      margin-left: 46px;
+    }
+  }
 }

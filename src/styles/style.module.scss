@@ -1,6 +1,6 @@
 .App {
   background: rgb(0,0,0, 0.9);
-  color: rgba(228, 229, 234, 1);
+  color: rgba(228, 229, 234, 0.9);
   overflow: hidden;
 }
 .about {
@@ -11,31 +11,39 @@
   line-height: 15px;
   color: rgba(228, 229, 234, 0.9);
 }
+.about p {
+  letter-spacing: .36px;
+  margin: 0 -1px 6px 0;
+}
 .about a {
+  letter-spacing: .56px;
   text-decoration: underline;
+  margin-left: 140px;
 }
 .address {
-  margin-top: 24px;
+  margin-top: 18px;
 }
 .logo {
   font-size: 10px;
+  font-style: normal;
+  letter-spacing: 0.3px;
   font-weight: 300;
   line-height: 12px;
-  width: 130px;
-  margin: 4px 0;
+  width: 140px;
+  margin: 11px 0;
   color: rgba(228, 229, 234, 0.5);
 }
 .line {
-  margin: 7px;
-  height: 1px;
+  margin: 12.5px 4px 0 3px;
+  height: 0.5px;
   display: block;
   width: 10px;
-  border: 1px solid;
+  border: 0.5px solid;
   border-image:  linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
   border-image-slice: 1;
 }
 .phone {
-  padding: 0 40px;
+  padding: 0 16px;
 }
 .block {
   display: flex;
@@ -47,19 +55,21 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  max-width: 1090px;
-  padding: 46px 20px 70px;
+  max-width: 1140px;
+  padding: 57px 0 20px;
   margin: 0 auto;
   position: relative;
 }
 
 h1 {
+  margin-left: -4px;
   width: 50%;
   font-size: 48px;
   font-weight: 400;
 }
 
 h2.title {
+  margin-left: -4px;
   font-size: 48px;
   font-weight: 900;
   background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%);
@@ -68,12 +78,14 @@ h2.title {
 }
 
 h2.sub_title {
+  margin-top: 15px;
   font-size: 18px;
   font-weight: 500;
   width: 291px;
 }
 
 h2.sub_title span {
+  letter-spacing: .9px;
   font-weight: 700;
   background: linear-gradient(270deg, #FCB045 36.99%, #FD1D1D 100%);
   -webkit-background-clip: text;
@@ -86,12 +98,15 @@ h2.sub_title span {
 }
 
 .section_text h6 {
+  letter-spacing: .8px;
   font-size: 18px;
   font-weight: 500;
   line-height: 22px;
 }
 
 .section_text p {
+  margin-top: 6px;
+  white-space: pre-line;
   font-family: "Montserrat", monospace;
   font-size: 16px;
   font-weight: 400;
@@ -104,8 +119,9 @@ h2.sub_title span {
 }
 
 h3.description {
+  margin-left: -2px;
   font-family: "Montserrat", monospace;
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: 18px;
   width: 300px;
 }
@@ -121,7 +137,7 @@ h3.description {
   padding: 20px 0;
 }
 .contact_phone {
-  margin-bottom: 25px;
+  margin-bottom: 21px;
 }
 .container {
   display: flex;
@@ -138,18 +154,48 @@ h3.description {
 @media screen and (max-width: 998px) {
   .about {
     margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .about p {
+    letter-spacing: .15px;
+  }
+  .about a {
+    font-size: 12px;
+    margin-left: 0;
   }
   .section_text {
     flex-direction: row;
+  }
+  .contact_phone {
+    font-size: 16px !important;
+    margin-bottom: 11px;
+  }
+  .section_text span ~ p {
+    font-size: 14px;
+    letter-spacing: 0.1px;
+  }
+  .address {
+    margin-top: 6px;
   }
   h1 {
     font-size: 36px;
   }
   h2.sub_title span {
+    letter-spacing: 0;
     text-transform: lowercase;
   }
-
+  h2.title {
+    font-size: 36px;
+  }
+  h3.description {
+    margin-top: 15px;
+    margin-left: -3px;
+  }
   .wrapper {
     padding: 0;
+  }
+  .contact {
+    font-size: 12px;
+    padding: 25px 0 18px 0;
   }
 }

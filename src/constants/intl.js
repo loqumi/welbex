@@ -7,7 +7,7 @@ export const INTL = {
   MENU: {
     TITLE_FIRST_PART: "МЕНЮ",
     TITLE_SECOND_PART: "\n",
-    COSTS: "Рассчет стоимости",
+    COSTS: "Расчет стоимости",
     SERVICES: "Услуги",
     WIDGETS: "Виджеты",
     INTEGRATIONS: "Интеграции",
@@ -15,7 +15,7 @@ export const INTL = {
     CASES: "Кейсы",
     LETTERS: "Благодарственные письма",
     CERTIFICATES: "Сертификаты",
-    YOUTUBE: "Блог на YouTube",
+    YOUTUBE: "Блог на Youtube",
     Q_A: "Вопрос / Ответ",
   },
   CONTACTS: {
@@ -55,7 +55,7 @@ export const INTL = {
     TEXT_DASHBOARD: "с показателями вашего бизнеса",
     MOB_TEXT_DASHBOARD: "DASHBOARD",
     SKYPE: "SKYPE АУДИТ",
-    TEXT_SKYPE: "отдела продаж и CRM системы",
+    TEXT_SKYPE: "отдела продаж \nи CRM системы",
     MOB_TEXT_SKYPE: "SKYPE АУДИТ",
     DAYS: "35 ДНЕЙ",
     TEXT_DAYS: "использования CRM",

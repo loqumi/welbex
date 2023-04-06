@@ -8,3 +8,12 @@
   text-align: left;
   padding: 20px 0;
 }
+
+@media screen and (max-width: 600px) {
+  .title {
+    line-height: 15px;
+    padding: unset;
+    margin: 29px 0 20px 0;
+    font-size: 12px;
+  }
+}

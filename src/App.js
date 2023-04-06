@@ -5,7 +5,6 @@ import {
   navLinks,
   socialLinks,
   companyLinks,
-  contactsLinks,
   menuLinksFirstPart,
   menuLinksSecondPart,
 } from "./constants/links";
@@ -26,6 +25,8 @@ import { MainWrapper } from "./components/MainWrapper";
 import { NavWrapper } from "./components/NavWrapper";
 import { BodyInfo } from "./components/BodyInfo";
 import { FooterNav } from "./components/FooterNav";
+import { HeaderNavLinks } from "./components/HeaderNavLinks";
+import { FooterNavLinks } from "./components/FooterNavLinks";
 
 export default function App() {
   return (
@@ -45,12 +46,14 @@ export default function App() {
             ))}
           </NavWrapper>
 
-          <Row direction={"row"}>
+          <HeaderNavLinks direction={"row"}>
             <a className={style.phone} href={"tel:+7 555 555-55-55"}>
               +7 555 555-55-55
             </a>
-            <LinkList items={socialLinks} />
-          </Row>
+            {socialLinks.map((link) => (
+              <NavLink key={link.href} {...link} />
+            ))}
+          </HeaderNavLinks>
         </Header>
 
         <Main>
@@ -114,7 +117,11 @@ export default function App() {
               {intl(INTL.CONTACTS.PHONE)}
             </a>
 
-            <LinkList items={socialLinks} />
+            <FooterNavLinks>
+              {socialLinks.map((link) => (
+                <NavLink key={link.href} {...link} />
+              ))}
+            </FooterNavLinks>
 
             <p className={style.address}>{intl(INTL.CONTACTS.ADDRESS)}</p>
 
@@ -130,12 +137,14 @@ export default function App() {
 }
 const LinkList = ({ items, direction, title }) => {
   return (
-    <Row direction={direction}>
+    <div>
       <LinksGroupTitle>{title}</LinksGroupTitle>
-      {items.map((link) => (
-        <NavLink key={link.href} {...link} />
-      ))}
-    </Row>
+      <Row direction={direction}>
+        {items.map((link) => (
+          <NavLink key={link.href} {...link} />
+        ))}
+      </Row>
+    </div>
   );
 };
 const Logo = () => {

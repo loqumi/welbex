@@ -13,8 +13,8 @@ export const navLinks = [
 ];
 export const socialLinks = [
   { href: "/telegram", title: "Telegram", icon: telegram },
-  { href: "/whatsapp", title: "Whatsapp", icon: whatsapp },
   { href: "/phone", title: "Телефон", icon: phone },
+  { href: "/whatsapp", title: "Whatsapp", icon: whatsapp },
 ];
 export const companyLinks = [
   { href: "/partner", title: intl(INTL.ABOUT.PARTNER) },
