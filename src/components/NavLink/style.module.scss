@@ -1,6 +1,6 @@
 .link:not(.icon) {
   transition: .4s;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 19px;
   text-align: left;
 
@@ -9,6 +9,12 @@
   &:hover {
     border-color: orangered;
   }
+}
+header a:not(.icon) {
+  font-weight: 500 !important;
+}
+a:not(.icon) {
+  font-weight: 400;
 }
 
 img.icon {
@@ -30,6 +36,7 @@ img.icon {
     font-size: 14px;
   }
   .link:not(.icon) {
+    font-weight: 400;
     line-height: 17px;
   }
   img.icon {
